@@ -18,7 +18,7 @@ app.use(cors({
   methods: ['GET', 'POST', 'PUT', 'DELETE'],
   credentials: true
 }));
-app.use(express.json()); 
+لهف
 app.use("/api/auth", authRoutes);
 app.use("/api/meals", mealRoutes)
 app.use('/api/Contact',ContactRoute)
