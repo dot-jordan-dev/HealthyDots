@@ -1,0 +1,18 @@
+# Dependencies
+node_modules/
+
+# Secrets & Config
+.env
+
+# Logs
+logs
+*.log
+npm-debug.log*
+
+# Uploads 
+uploads/
+public/temp/
+
+# System Files
+.DS_Store
+.vscode/
