@@ -6,17 +6,15 @@ const mealRoutes = require("./routes/mealRoutes");
 const ContactRoute= require('./routes/contactRoutes');
 
 require('dotenv').config();
- 
-
-ConnectDB()
+ ConnectDB()
 const app = express();
 const PORT = process.env.PORT || 5001;
 
-
+app.use(express.json())
 app.use(cors({
   origin: 'https://healthy-dots-icxn.vercel.app', 
   methods: ['GET', 'POST', 'PUT', 'DELETE'],
-  credentials: true
+allowedHeaders: ['Content-Type', 'Authorization']
 }));
 
 app.use("/api/auth", authRoutes);
