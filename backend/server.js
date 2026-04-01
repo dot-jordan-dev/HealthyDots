@@ -17,7 +17,6 @@ app.use(cors({
 allowedHeaders: ['Content-Type', 'Authorization']
 }));
 
-
 app.use("/api/auth", authRoutes);
 app.use("/api/meals", mealRoutes)
 app.use('/api/Contact',ContactRoute)
